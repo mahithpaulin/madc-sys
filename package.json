@@ -1,0 +1,29 @@
+{
+  "name": "@workspace/scripts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "hello": "tsx ./src/hello.ts",
+    "madc": "tsx ./src/madc/index.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.7.0",
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "catalog:",
+    "@types/uuid": "^11.0.0",
+    "tsx": "catalog:"
+  },
+  "dependencies": {
+    "@octokit/rest": "^22.0.1",
+    "boxen": "^8.0.1",
+    "chalk": "^5.6.2",
+    "cli-table3": "^0.6.5",
+    "figlet": "^1.11.0",
+    "gradient-string": "^3.0.0",
+    "inquirer": "^14.0.0",
+    "ora": "^9.4.0",
+    "uuid": "^14.0.0"
+  }
+}
