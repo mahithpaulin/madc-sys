@@ -1,0 +1,26 @@
+{
+  "name": "madc-termux",
+  "version": "1.0.0",
+  "description": "MADC-SYS for Termux — Multi-Agent Distributed Coding System, phone-ready",
+  "type": "module",
+  "bin": {
+    "madc": "./dist/madc.cjs"
+  },
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node18 --format=cjs --outfile=dist/madc.cjs --external:readline --external:fs --external:path --external:os --external:events --external:crypto --external:url --external:util --external:stream --external:buffer --external:process",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.0.2",
+    "chalk": "^5.3.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/uuid": "^9.0.0",
+    "esbuild": "^0.24.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
